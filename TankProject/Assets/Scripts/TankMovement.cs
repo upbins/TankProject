@@ -11,18 +11,7 @@ public class TankMovement : MonoBehaviour {
 	public AudioClip drivingAudio;
 	private AudioSource audio;
 	public int PlayerType = 1;//玩家类型区分不同控制
-	// Use this for initialization
-	void Start () {
-		rigidBody = this.GetComponent<Rigidbody>();	
-		audio = this.GetComponent<AudioSource>();
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-	/// <summary>
-	/// This function is called every fixed framerate frame, if the MonoBehaviour is enabled.
+	// Use this for initializationArate frame, if the MonoBehaviour is enabled.
 	/// </summary>
 	void FixedUpdate()
 	{
