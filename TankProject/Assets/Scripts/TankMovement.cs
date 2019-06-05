@@ -13,6 +13,15 @@ public class TankMovement : MonoBehaviour {
 	public int PlayerType = 1;//玩家类型区分不同控制
 	// Use this for initializationArate frame, if the MonoBehaviour is enabled.
 	/// </summary>
+	 /// <summary>
+	/// Start is called on the frame when a script is enabled just before
+	/// any of the Update methods is called the first time.
+	/// </summary>
+	void Start()
+	{
+        rigidBody = this.GetComponent<Rigidbody>();
+		audio = this.GetComponent<AudioSource>();
+	}
 	void FixedUpdate()
 	{
 		float v = Input.GetAxis("VerticalPlayer" + PlayerType);
